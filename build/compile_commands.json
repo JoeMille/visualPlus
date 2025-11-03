@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/user/GitRepos/visualPlus/build",
+  "command": "/usr/bin/g++ -DCPPHTTPLIB_BROTLI_SUPPORT -DCPPHTTPLIB_OPENSSL_SUPPORT -DCPPHTTPLIB_ZLIB_SUPPORT -isystem /home/user/GitRepos/visualPlus/build/_deps/httplib-src -g -std=gnu++20 -o CMakeFiles/server.dir/src/main.cpp.o -c /home/user/GitRepos/visualPlus/src/main.cpp",
+  "file": "/home/user/GitRepos/visualPlus/src/main.cpp",
+  "output": "/home/user/GitRepos/visualPlus/build/CMakeFiles/server.dir/src/main.cpp.o"
+}
+]

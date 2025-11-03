@@ -1,0 +1,13 @@
+/home/user/GitRepos/visualPlus/build/CMakeFiles/server.dir
+/home/user/GitRepos/visualPlus/build/CMakeFiles/edit_cache.dir
+/home/user/GitRepos/visualPlus/build/CMakeFiles/rebuild_cache.dir
+/home/user/GitRepos/visualPlus/build/CMakeFiles/list_install_components.dir
+/home/user/GitRepos/visualPlus/build/CMakeFiles/install.dir
+/home/user/GitRepos/visualPlus/build/CMakeFiles/install/local.dir
+/home/user/GitRepos/visualPlus/build/CMakeFiles/install/strip.dir
+/home/user/GitRepos/visualPlus/build/_deps/httplib-build/CMakeFiles/edit_cache.dir
+/home/user/GitRepos/visualPlus/build/_deps/httplib-build/CMakeFiles/rebuild_cache.dir
+/home/user/GitRepos/visualPlus/build/_deps/httplib-build/CMakeFiles/list_install_components.dir
+/home/user/GitRepos/visualPlus/build/_deps/httplib-build/CMakeFiles/install.dir
+/home/user/GitRepos/visualPlus/build/_deps/httplib-build/CMakeFiles/install/local.dir
+/home/user/GitRepos/visualPlus/build/_deps/httplib-build/CMakeFiles/install/strip.dir

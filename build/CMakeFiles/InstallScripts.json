@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/user/GitRepos/visualPlus/build/cmake_install.cmake",
+		"/home/user/GitRepos/visualPlus/build/_deps/httplib-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
