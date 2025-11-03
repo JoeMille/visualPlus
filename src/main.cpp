@@ -74,5 +74,32 @@ public:
         if (ext == ".js") return "application/javascript";
         if (ext == ".json") return "application/json";
         if (ext == ".png") return "image/png";
-        if (ext == ".jpg" ||)
+        if (ext == ".jpg" || ext == ".jpeg") return "image/jpeg";
+        if (ext == ".svg") return "image/svg+xml";
+
+        return "text/plain";
+    }
+
+    void start(int port) {
+        std::cout << std::format("Starting server on http://localhost:{}\n", port);
+        std::cout << std::format("Serving files from: {}\n", std:;filesystem::absolute(public_dir).string());
+
+        if (!server.listen("localhost", port)) {
+            std::cerr << std::format("Failed to start server on local port.")
+        }
+
+    };
+
+    int main() {
+        // scan for pub dir
+        const autoo public_dir = std::filesystem::path("public");
+        if (!std::filesystem::exists(public_dir)) {
+            std::cerr << "Public directory not found. Make sure 'public' folder exists." << std::endl;
+            return 1;
+        }
+
+        StaticFileServer server(public_dir.string());
+        server.start(5001);
+
+        return 0;
     }
