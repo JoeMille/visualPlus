@@ -36,6 +36,11 @@ public:
             serveFile("index.html", res);
         });
 
+        server.Get("R(/(.+))", [this](const httplib::Request& req, httplib::Response& res) {
+            auto filename = req.matches[1].str();
+            serveFile(filename, res);
+        });
+
         // api test 
         server.Get("/api/hello", [](const httplib::Request& req, httplib::Response& res) {
             auto now = std::chrono::system_clock::now();

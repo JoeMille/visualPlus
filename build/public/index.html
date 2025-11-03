@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Plus - C++ Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #response {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Hello World from C++20 Server!</h1>
+        <p>Your C++ server is running successfully on port 5001</p>
+        <button id="testApi">Test API Endpoint</button>
+        <div id="response"></div>
+    </div>
+
+    <script>
+        document.getElementById('testApi').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/api/hello');
+                const data = await response.json();
+                
+                document.getElementById('response').innerHTML = 
+                    `<strong>API Response:</strong><br>${data.message}<br><small>Timestamp: ${data.timestamp}</small>`;
+            } catch (error) {
+                document.getElementById('response').innerHTML = 
+                    `<strong>Error:</strong> ${error.message}`;
+            }
+        });
+
+        console.log('Visual Plus C++ Server - Frontend Loaded Successfully!');
+    </script>
+</body>
+</html>
